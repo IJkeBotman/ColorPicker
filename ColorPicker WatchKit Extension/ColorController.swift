@@ -23,6 +23,15 @@ class ColorController: WKInterfaceController {
         label.setText("#" + color.hexString)
     }
     
+    func updateSelectedColor() {
+        ColorManager.defaultManager.selectedColor = activeColor
+    }
+    
+    override func didAppear() {
+        super.didAppear()
+        updateSelectedColor()
+    }
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         if let color = context as? UIColor {

@@ -18,5 +18,12 @@ class InterfaceController: WKInterfaceController {
         let namesAndContexts: [(name: String, context: AnyObject)] = colors.map({c in ("ColorPalette", c)})
         presentController(withNamesAndContexts: namesAndContexts)
     }
+    
+    override func willActivate() {
+        super.willActivate()
+        let color = ColorManager.defaultManager.selectedColor
+        colorGroup.setBackgroundColor(color)
+        label.setText("#" + color.hexString)
+    }
 }
 

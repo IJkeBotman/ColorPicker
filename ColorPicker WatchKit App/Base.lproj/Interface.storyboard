@@ -18,7 +18,11 @@
                             <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </group>
                         <label alignment="left" text="#00FFFF" id="MHe-yY-Uoh"/>
-                        <button width="1" alignment="left" title="More" id="UM6-5V-txF"/>
+                        <button width="1" alignment="left" title="More" id="UM6-5V-txF">
+                            <connections>
+                                <segue destination="9QX-iE-Xqw" kind="push" id="NfL-nV-VXw"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="Change Color" id="4bW-kc-xtS">
                             <connections>
                                 <action selector="changeColors" destination="zST-fE-PPa" id="PK4-3p-Teb"/>
@@ -33,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="342" y="387"/>
         </scene>
-        <!--ColorPalette-->
+        <!--Done-->
         <scene sceneID="fhN-Eg-kZ9">
             <objects>
-                <controller identifier="ColorPalette" id="hh1-ty-tYr" customClass="ColorController" customModule="ColorPicker_WatchKit_Extension">
+                <controller identifier="ColorPalette" title="Done" id="hh1-ty-tYr" customClass="ColorController" customModule="ColorPicker_WatchKit_Extension">
                     <items>
                         <group width="1" height="1" alignment="left" id="l4X-7B-jot">
                             <items>
@@ -52,6 +56,33 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="582" y="387"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="6Cc-Vc-91F">
+            <objects>
+                <controller id="9QX-iE-Xqw" customClass="DetailController" customModule="ColorPicker_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Hex" id="P35-6N-5lp">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="Ail-aZ-muW"/>
+                        <label alignment="left" text="RGB" id="Yr4-4l-cav">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="EW1-YK-JAp"/>
+                        <label alignment="left" text="HSL" id="kf0-Pb-B8G">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" id="xiv-3W-bkU"/>
+                    </items>
+                    <connections>
+                        <outlet property="hexLabel" destination="Ail-aZ-muW" id="N1w-4i-mdd"/>
+                        <outlet property="hslLabel" destination="xiv-3W-bkU" id="5Sd-jt-ReJ"/>
+                        <outlet property="rgbLabel" destination="EW1-YK-JAp" id="O9d-Gr-8Cv"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="823" y="387"/>
         </scene>
     </scenes>
 </document>
