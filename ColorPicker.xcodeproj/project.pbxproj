@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A301567200FB44100285AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A301566200FB44100285AAC /* AppDelegate.swift */; };
+		0A301569200FB44100285AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A301568200FB44100285AAC /* ViewController.swift */; };
+		0A30156C200FB44100285AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A30156A200FB44100285AAC /* Main.storyboard */; };
+		0A30156E200FB44100285AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A30156D200FB44100285AAC /* Assets.xcassets */; };
+		0A301571200FB44100285AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A30156F200FB44100285AAC /* LaunchScreen.storyboard */; };
+		0A301576200FB44100285AAC /* ColorPicker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A301575200FB44100285AAC /* ColorPicker WatchKit App.app */; };
+		0A30157C200FB44100285AAC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A30157A200FB44100285AAC /* Interface.storyboard */; };
+		0A30157E200FB44100285AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A30157D200FB44100285AAC /* Assets.xcassets */; };
+		0A301585200FB44200285AAC /* ColorPicker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A301584200FB44200285AAC /* ColorPicker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A30158A200FB44200285AAC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A301589200FB44200285AAC /* InterfaceController.swift */; };
+		0A30158C200FB44200285AAC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A30158B200FB44200285AAC /* ExtensionDelegate.swift */; };
+		0A30158E200FB44200285AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A30158D200FB44200285AAC /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A301577200FB44100285AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A30155B200FB44100285AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A301574200FB44100285AAC;
+			remoteInfo = "ColorPicker WatchKit App";
+		};
+		0A301586200FB44200285AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A30155B200FB44100285AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A301583200FB44200285AAC;
+			remoteInfo = "ColorPicker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A301595200FB44200285AAC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A301585200FB44200285AAC /* ColorPicker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A301599200FB44200285AAC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0A301576200FB44100285AAC /* ColorPicker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A301563200FB44100285AAC /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A301566200FB44100285AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A301568200FB44100285AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A30156B200FB44100285AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A30156D200FB44100285AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A301570200FB44100285AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A301572200FB44100285AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A301575200FB44100285AAC /* ColorPicker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColorPicker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A30157B200FB44100285AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0A30157D200FB44100285AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A30157F200FB44100285AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A301584200FB44200285AAC /* ColorPicker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ColorPicker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A301589200FB44200285AAC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0A30158B200FB44200285AAC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0A30158D200FB44200285AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A30158F200FB44200285AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A301560200FB44100285AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A301581200FB44200285AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A30155A200FB44100285AAC = {
+			isa = PBXGroup;
+			children = (
+				0A301565200FB44100285AAC /* ColorPicker */,
+				0A301579200FB44100285AAC /* ColorPicker WatchKit App */,
+				0A301588200FB44200285AAC /* ColorPicker WatchKit Extension */,
+				0A301564200FB44100285AAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A301564200FB44100285AAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A301563200FB44100285AAC /* ColorPicker.app */,
+				0A301575200FB44100285AAC /* ColorPicker WatchKit App.app */,
+				0A301584200FB44200285AAC /* ColorPicker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A301565200FB44100285AAC /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				0A301566200FB44100285AAC /* AppDelegate.swift */,
+				0A301568200FB44100285AAC /* ViewController.swift */,
+				0A30156A200FB44100285AAC /* Main.storyboard */,
+				0A30156D200FB44100285AAC /* Assets.xcassets */,
+				0A30156F200FB44100285AAC /* LaunchScreen.storyboard */,
+				0A301572200FB44100285AAC /* Info.plist */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		0A301579200FB44100285AAC /* ColorPicker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0A30157A200FB44100285AAC /* Interface.storyboard */,
+				0A30157D200FB44100285AAC /* Assets.xcassets */,
+				0A30157F200FB44100285AAC /* Info.plist */,
+			);
+			path = "ColorPicker WatchKit App";
+			sourceTree = "<group>";
+		};
+		0A301588200FB44200285AAC /* ColorPicker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A301589200FB44200285AAC /* InterfaceController.swift */,
+				0A30158B200FB44200285AAC /* ExtensionDelegate.swift */,
+				0A30158D200FB44200285AAC /* Assets.xcassets */,
+				0A30158F200FB44200285AAC /* Info.plist */,
+			);
+			path = "ColorPicker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A301562200FB44100285AAC /* ColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A30159A200FB44200285AAC /* Build configuration list for PBXNativeTarget "ColorPicker" */;
+			buildPhases = (
+				0A30155F200FB44100285AAC /* Sources */,
+				0A301560200FB44100285AAC /* Frameworks */,
+				0A301561200FB44100285AAC /* Resources */,
+				0A301599200FB44200285AAC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A301578200FB44100285AAC /* PBXTargetDependency */,
+			);
+			name = ColorPicker;
+			productName = ColorPicker;
+			productReference = 0A301563200FB44100285AAC /* ColorPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A301574200FB44100285AAC /* ColorPicker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A301596200FB44200285AAC /* Build configuration list for PBXNativeTarget "ColorPicker WatchKit App" */;
+			buildPhases = (
+				0A301573200FB44100285AAC /* Resources */,
+				0A301595200FB44200285AAC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A301587200FB44200285AAC /* PBXTargetDependency */,
+			);
+			name = "ColorPicker WatchKit App";
+			productName = "ColorPicker WatchKit App";
+			productReference = 0A301575200FB44100285AAC /* ColorPicker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0A301583200FB44200285AAC /* ColorPicker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A301592200FB44200285AAC /* Build configuration list for PBXNativeTarget "ColorPicker WatchKit Extension" */;
+			buildPhases = (
+				0A301580200FB44200285AAC /* Sources */,
+				0A301581200FB44200285AAC /* Frameworks */,
+				0A301582200FB44200285AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ColorPicker WatchKit Extension";
+			productName = "ColorPicker WatchKit Extension";
+			productReference = 0A301584200FB44200285AAC /* ColorPicker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A30155B200FB44100285AAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "IJke Botman";
+				TargetAttributes = {
+					0A301562200FB44100285AAC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					0A301574200FB44100285AAC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					0A301583200FB44200285AAC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A30155E200FB44100285AAC /* Build configuration list for PBXProject "ColorPicker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A30155A200FB44100285AAC;
+			productRefGroup = 0A301564200FB44100285AAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A301562200FB44100285AAC /* ColorPicker */,
+				0A301574200FB44100285AAC /* ColorPicker WatchKit App */,
+				0A301583200FB44200285AAC /* ColorPicker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A301561200FB44100285AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A301571200FB44100285AAC /* LaunchScreen.storyboard in Resources */,
+				0A30156E200FB44100285AAC /* Assets.xcassets in Resources */,
+				0A30156C200FB44100285AAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A301573200FB44100285AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A30157E200FB44100285AAC /* Assets.xcassets in Resources */,
+				0A30157C200FB44100285AAC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A301582200FB44200285AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A30158E200FB44200285AAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A30155F200FB44100285AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A301569200FB44100285AAC /* ViewController.swift in Sources */,
+				0A301567200FB44100285AAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A301580200FB44200285AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A30158C200FB44200285AAC /* ExtensionDelegate.swift in Sources */,
+				0A30158A200FB44200285AAC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A301578200FB44100285AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A301574200FB44100285AAC /* ColorPicker WatchKit App */;
+			targetProxy = 0A301577200FB44100285AAC /* PBXContainerItemProxy */;
+		};
+		0A301587200FB44200285AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A301583200FB44200285AAC /* ColorPicker WatchKit Extension */;
+			targetProxy = 0A301586200FB44200285AAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A30156A200FB44100285AAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A30156B200FB44100285AAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A30156F200FB44100285AAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A301570200FB44100285AAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0A30157A200FB44100285AAC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A30157B200FB44100285AAC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A301590200FB44200285AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A301591200FB44200285AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A301593200FB44200285AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X96UND4B94;
+				INFOPLIST_FILE = "ColorPicker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.overscope.ColorPicker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		0A301594200FB44200285AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X96UND4B94;
+				INFOPLIST_FILE = "ColorPicker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.overscope.ColorPicker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		0A301597200FB44200285AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X96UND4B94;
+				IBSC_MODULE = ColorPicker_WatchKit_Extension;
+				INFOPLIST_FILE = "ColorPicker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.overscope.ColorPicker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		0A301598200FB44200285AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X96UND4B94;
+				IBSC_MODULE = ColorPicker_WatchKit_Extension;
+				INFOPLIST_FILE = "ColorPicker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.overscope.ColorPicker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		0A30159B200FB44200285AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X96UND4B94;
+				INFOPLIST_FILE = ColorPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.overscope.ColorPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A30159C200FB44200285AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X96UND4B94;
+				INFOPLIST_FILE = ColorPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.overscope.ColorPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A30155E200FB44100285AAC /* Build configuration list for PBXProject "ColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A301590200FB44200285AAC /* Debug */,
+				0A301591200FB44200285AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A301592200FB44200285AAC /* Build configuration list for PBXNativeTarget "ColorPicker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A301593200FB44200285AAC /* Debug */,
+				0A301594200FB44200285AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A301596200FB44200285AAC /* Build configuration list for PBXNativeTarget "ColorPicker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A301597200FB44200285AAC /* Debug */,
+				0A301598200FB44200285AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A30159A200FB44200285AAC /* Build configuration list for PBXNativeTarget "ColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A30159B200FB44200285AAC /* Debug */,
+				0A30159C200FB44200285AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A30155B200FB44100285AAC /* Project object */;
+}
