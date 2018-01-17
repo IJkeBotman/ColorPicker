@@ -34,7 +34,7 @@ public extension UIColor {
         let strings: [String] = [r, g, b].map { f in
             let i = Int(f * 255.0)
             let str = NSString(format: "%2X", i).trimmingCharacters(in: CharacterSet.whitespaces)
-            if str.characters.count == 1 {
+            if str.count == 1 {
                 return "0" + str
             } else {
                 return str

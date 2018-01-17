@@ -23,6 +23,8 @@
 		0A41463B200FD9FA000FE357 /* ColorDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41463A200FD9FA000FE357 /* ColorDetailController.swift */; };
 		0A41463D200FDA14000FE357 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41463C200FDA14000FE357 /* ColorCell.swift */; };
 		0A414640200FDA6D000FE357 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41463F200FDA6D000FE357 /* ColorManager.swift */; };
+		0A414644200FDCB9000FE357 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A414643200FDCB9000FE357 /* ColorController.swift */; };
+		0A414645200FDD7C000FE357 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41463F200FDA6D000FE357 /* ColorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,7 @@
 		0A41463A200FD9FA000FE357 /* ColorDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailController.swift; sourceTree = "<group>"; };
 		0A41463C200FDA14000FE357 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		0A41463F200FDA6D000FE357 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		0A414643200FDCB9000FE357 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 				0A30158B200FB44200285AAC /* ExtensionDelegate.swift */,
 				0A30158D200FB44200285AAC /* Assets.xcassets */,
 				0A30158F200FB44200285AAC /* Info.plist */,
+				0A414643200FDCB9000FE357 /* ColorController.swift */,
 			);
 			path = "ColorPicker WatchKit Extension";
 			sourceTree = "<group>";
@@ -323,7 +327,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A30158C200FB44200285AAC /* ExtensionDelegate.swift in Sources */,
+				0A414644200FDCB9000FE357 /* ColorController.swift in Sources */,
 				0A30158A200FB44200285AAC /* InterfaceController.swift in Sources */,
+				0A414645200FDD7C000FE357 /* ColorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
