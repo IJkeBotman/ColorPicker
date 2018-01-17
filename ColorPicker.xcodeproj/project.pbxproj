@@ -19,6 +19,10 @@
 		0A30158A200FB44200285AAC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A301589200FB44200285AAC /* InterfaceController.swift */; };
 		0A30158C200FB44200285AAC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A30158B200FB44200285AAC /* ExtensionDelegate.swift */; };
 		0A30158E200FB44200285AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A30158D200FB44200285AAC /* Assets.xcassets */; };
+		0A414639200FD9E6000FE357 /* ColorTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A414638200FD9E6000FE357 /* ColorTableController.swift */; };
+		0A41463B200FD9FA000FE357 /* ColorDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41463A200FD9FA000FE357 /* ColorDetailController.swift */; };
+		0A41463D200FDA14000FE357 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41463C200FDA14000FE357 /* ColorCell.swift */; };
+		0A414640200FDA6D000FE357 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41463F200FDA6D000FE357 /* ColorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		0A30158B200FB44200285AAC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0A30158D200FB44200285AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A30158F200FB44200285AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A414638200FD9E6000FE357 /* ColorTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableController.swift; sourceTree = "<group>"; };
+		0A41463A200FD9FA000FE357 /* ColorDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailController.swift; sourceTree = "<group>"; };
+		0A41463C200FDA14000FE357 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		0A41463F200FDA6D000FE357 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 		0A30155A200FB44100285AAC = {
 			isa = PBXGroup;
 			children = (
+				0A41463E200FDA5F000FE357 /* ColorPickerKit */,
 				0A301565200FB44100285AAC /* ColorPicker */,
 				0A301579200FB44100285AAC /* ColorPicker WatchKit App */,
 				0A301588200FB44200285AAC /* ColorPicker WatchKit Extension */,
@@ -129,6 +138,9 @@
 				0A30156D200FB44100285AAC /* Assets.xcassets */,
 				0A30156F200FB44100285AAC /* LaunchScreen.storyboard */,
 				0A301572200FB44100285AAC /* Info.plist */,
+				0A414638200FD9E6000FE357 /* ColorTableController.swift */,
+				0A41463A200FD9FA000FE357 /* ColorDetailController.swift */,
+				0A41463C200FDA14000FE357 /* ColorCell.swift */,
 			);
 			path = ColorPicker;
 			sourceTree = "<group>";
@@ -152,6 +164,14 @@
 				0A30158F200FB44200285AAC /* Info.plist */,
 			);
 			path = "ColorPicker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0A41463E200FDA5F000FE357 /* ColorPickerKit */ = {
+			isa = PBXGroup;
+			children = (
+				0A41463F200FDA6D000FE357 /* ColorManager.swift */,
+			);
+			path = ColorPickerKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A41463B200FD9FA000FE357 /* ColorDetailController.swift in Sources */,
 				0A301569200FB44100285AAC /* ViewController.swift in Sources */,
+				0A414639200FD9E6000FE357 /* ColorTableController.swift in Sources */,
+				0A414640200FDA6D000FE357 /* ColorManager.swift in Sources */,
+				0A41463D200FDA14000FE357 /* ColorCell.swift in Sources */,
 				0A301567200FB44100285AAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,7 +562,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.overscope.ColorPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -553,7 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.overscope.ColorPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
