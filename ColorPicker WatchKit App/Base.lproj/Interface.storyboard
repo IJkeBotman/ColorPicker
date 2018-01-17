@@ -49,6 +49,20 @@
                             <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </group>
                     </items>
+                    <menu key="menu" id="CKI-0U-dMM">
+                        <items>
+                            <menuItem title="Darker" image="darken" id="bfx-4s-RRG">
+                                <connections>
+                                    <action selector="onDarken" destination="hh1-ty-tYr" id="NW3-pj-cyk"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Lighter" image="lighten" id="zF5-BL-pLp">
+                                <connections>
+                                    <action selector="onLighten" destination="hh1-ty-tYr" id="BjC-zV-Gmy"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="backgroundGroup" destination="l4X-7B-jot" id="9xa-sa-eb3"/>
                         <outlet property="label" destination="2e8-fp-ea7" id="9bt-Tj-O0a"/>

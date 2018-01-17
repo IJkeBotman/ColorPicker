@@ -17,6 +17,16 @@ class ColorController: WKInterfaceController {
     
     var activeColor = UIColor.white
     
+    @IBAction func onDarken() {
+        update(color: activeColor.darkerColor())
+        updateSelectedColor()
+    }
+    
+    @IBAction func onLighten() {
+        update(color: activeColor.lighterColor())
+        updateSelectedColor()
+    }
+    
     func update(color: UIColor) {
         activeColor = color
         backgroundGroup.setBackgroundColor(color)
